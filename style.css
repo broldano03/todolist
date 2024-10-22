@@ -1,0 +1,164 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #1e1e2e 20%, #232344 50%, #191932 80%);
+    color: #fff;
+    overflow: auto;
+}
+
+/* Importar Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Contenedor principal */
+.container {
+    max-width: 80%;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(30, 30, 46, 0.9);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 50px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 50px;
+}
+
+.perfil {
+    margin-bottom: 30px;
+}
+
+.perfil h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 1px #00f0ff, 0 0 20px #00f0ff;
+}
+
+.perfil span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #afafaf;
+
+}
+
+.fecha {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.agregar-tarea {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 1px solid #4a4a6a;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 20, 0.7);
+}
+
+.input-tarea {
+    width: 85%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+}
+
+.input-tarea::placeholder {
+    color: #888;
+}
+
+.agregar-tarea i {
+    color: #00f0ff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.agregar-tarea i:hover {
+    color: rgb(0, 172, 172);
+    transform: scale(1.1);
+}
+
+.seccion-tarea {
+    text-align: left;
+}
+
+.seccion-tarea h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+#lista {
+    list-style: none;
+}
+
+#lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Crece verticalmente con el contenido */
+    padding: 10px;
+    background-color: rgba(20, 20, 35, 0.8);
+    border: 1px solid #3a3a50;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    flex-wrap: wrap; /* Salto de línea */
+}
+
+#lista li:hover {
+    background-color: rgba(30, 30, 50, 0.9);
+}
+
+.co {
+    color: #00b7c5;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.co:hover {
+    color: rgb(63, 255, 255);
+    transform: scale(1.1);
+}
+
+.text {
+    flex-grow: 1;
+    margin-left: 10px;
+    color: #eee;
+    font-size: 16px;
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+}
+
+.de {
+    color: #ff5757;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    margin-left: auto;
+}
+
+.de:hover {
+    color: #d51111;
+    transform: scale(1.1);
+}
+
+
+.line-through {
+    text-decoration: line-through;
+    text-decoration-color: white;
+}
